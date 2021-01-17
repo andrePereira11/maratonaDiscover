@@ -11,7 +11,9 @@ Este projeto segue o tutorial da maratona Discover realizado pela Rocketseat. A 
 Estes links abaixo se referem à tutoriais complementares para se fazer o dark-mode do projeto. O primeiro é também do Maik Brito, professor responsavel pela maratona discover. Os demais utilizei apenas para complementar meus estudos e deixar do modo que mais me agradou.
 
 [Dark Mode raiz com CSS e JavaScript | Code/Drops #24](https://youtu.be/BvhYm0BOLvA)
+
 [Dark Mode com CSS: Simples, Rápido e Preciso](https://youtu.be/rnkdLX6mOD4)
+
 [Light/Dark Theme Toggle with CSS and JavaScript](https://youtu.be/xodD0nw2veQ)
 
 ## Explicação do dark mode deste projeto
@@ -31,12 +33,13 @@ Primeiro, acima da logo dev.finance$ (dentro da tag `<header>`), foi acrescentad
 </div>
 ```
 
-Depois importei dentro da tag `<head></head>` o link para o font-awesome. Você pode pegar esse link fazendo os seguintes passos:
+Depois importei dentro da tag `<head></head>` o link para o font-awesome. Esta importação servirá para colocar os icones de lua e sol no checkbox.
+Você pode pegar esse link fazendo os seguintes passos:
 
-1.Acessar o site [Font-Awesome](https://fontawesome.com/start/)
-2.Colocar seu email no campo de email. hehehehe
-3.Clicar no botão ao lado do campo de email
-4.Ir na sua caixa de email e confirmar sua conta
+1. Acessar o site [Font-Awesome](https://fontawesome.com/start/)
+2. Colocar seu email no campo de email. hehehehe
+3. Clicar no botão ao lado do campo de email
+4. Ir na sua caixa de email e confirmar sua conta
 
 Clicando no link do email enviado, ele irá te redirecionar para o criar uma conta, assim que criada, te dará um código `<script src="htt......"></script>`. Tendo esse código, copie e cole ele dentro da tag `<head></head>`. Pronto, sua importação de fontes está feita.
 
@@ -99,7 +102,7 @@ Dentro das tags `<head></head>` novamente coloque a importação do javascript d
 <script src="./script.js"></script>
 ```
 
-Dentro do arquivo script.js coloque os seguintes códigos:
+Dentro do arquivo script.js coloque o seguinte códigos:
 
 ```
 window.onload = () => {
@@ -112,6 +115,6 @@ window.onload = () => {
 }
 ```
 
-Está parte de dark-mode entra apenas como um complemento da aula 01 dada até agora. Apenas uma brincadeirinha.
+Esta parte de dark-mode entra apenas como um complemento da aula 01 dada até agora. Apenas uma brincadeirinha.
 
 Espero que curtam e quem souber mais de teoria de cores, depois da uma ajudada em como saber como escolher uma paleta de cores, porque sou horrivel com essa parte hehehehe.
