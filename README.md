@@ -2,6 +2,9 @@
 
 Este projeto segue o tutorial da maratona Discover realizado pela Rocketseat. A idéia do projeto é realizar um app (apenas Front-End) financeiro.
 
+## Aplicação funcionando
+[Teste a aplicação clicando aqui](https://andrepereira11.github.io/maratonaDiscover/)
+
 ## Links das aulas da Maratona
 
 [Aula01 - A Base de Tudo](https://youtu.be/NlDr6JX3VvA)
