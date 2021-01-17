@@ -64,7 +64,7 @@ No Css, seguindo o modelo de cascata, foi colocado depois do `header{}` as segui
 }
 
 .ball{
-  background: var(--bg-color);
+  background: #fff;
   border-radius: 50%;
   position: absolute;
   top: 2px;
