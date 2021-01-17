@@ -3,6 +3,17 @@
   --bg-color: #f0f2f5;
   --cards-color: #fff;
   --text-table-color: #969cb3;
+  --primary-color: #2D4a22;
+  --secondary-color: #49aa26;
+}
+
+.dark-mode:root{
+  --text-color-main: #fff;
+  --bg-color: #121214;
+  --cards-color: #201f24;
+  --text-table-color: #969cb3;
+  --primary-color: #49aa26;
+  --secondary-color: #55d400;
 }
 
 *{
@@ -30,9 +41,49 @@ h2{
 
 /* ================== HEADER =========================*/
 header{
-  background: #2D4a22;
+  background: var(--primary-color);
   padding: 2rem 0 10rem;
   text-align: center;
+}
+
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+
+.label{
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  height: 26px;
+  width: 50px;
+}
+
+.ball{
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon{
+  color: #f1c40f;
+}
+
+.fa-sun{
+  color: #f39c12;
 }
 
 #logo{
@@ -57,7 +108,7 @@ header{
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
-  color: var(--color-dark-blue);
+  color: var(--text-color-main);
 }
 
 .card h3{
@@ -72,7 +123,7 @@ header{
 }
 
 .card.total{                /*Os dois juntos quer dizer o bloco que tem a classe card e tambem a classe total*/
- background: #49aa26;
+ background: var(--secondary-color);
  color: #fff;
 }
 
@@ -108,7 +159,7 @@ table tbody td{
 }
 
 td.description{
-  color: var(--text-color-main);
+  color: var(--text-table-color);
 }
 
 td.income{
